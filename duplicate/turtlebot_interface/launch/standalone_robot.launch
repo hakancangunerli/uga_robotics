@@ -1,0 +1,19 @@
+<launch>
+
+   <!-- ********** begin robot ********************** /-->
+   <include file="$(find turtlebot_bringup)/launch/minimal.launch"/>
+
+
+   <!-- ********** laser scanner ********************** /-->
+   <arg name="set_frame_id" default="laser"/>
+   <node pkg="hls_lfcd_lds_driver" type="hlds_laser_publisher" name="turtlebot_lds" output="screen">
+      <param name="port" value="/dev/ttyUSB0"/>
+      <param name="frame_id" value="$(arg set_frame_id)"/>
+   </node>
+    
+   <!-- gmapping -->
+   <include file="$(find turtlebot_navigation)/launch/gmapping_demo.launch"/>
+   <!-- static tf publisher -->
+   <node pkg="tf" type="static_transform_publisher" args="0 0 0 0 0 0 /base_footprint /laser 1000" name="tf_static_trans" />
+
+</launch>
