@@ -1,0 +1,14 @@
+<launch>
+  <!-- Turtlebot -->
+  <!--param name="robot description" command="$(find xacro)/xacro.py $(find turtlebot_description)/robots/kobuki_hexagons_asus_xtion_pro.urdf.xacro" /--> 
+  <!--node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"></node-->
+ <!--group ns="dalek"-->
+  <include file="$(find turtlebot_bringup)/launch/minimal.launch"/>
+  <!--include file="$(find turtlebot_bringup)/launch/3dsensor.launch"/-->
+  <include file="$(find urg_node)/launch/urg_lidar.launch"/>
+ <!--/group-->
+  <include file="$(find turtlebot_teleop)/launch/xbox360_teleop.launch"/>
+  <!-- gmapping moved to remote -->
+  <!-- <include file="$(find turtlebot_navigation)/launch/gmapping_demo.launch"/> -->
+  <!-- <node pkg="tf" type="static_transform_publisher" name="laser_to_map" args="0 0 0 0 0 0 map laser 1000" /> -->
+</launch>

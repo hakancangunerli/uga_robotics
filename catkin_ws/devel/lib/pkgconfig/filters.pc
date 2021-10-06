@@ -1,0 +1,8 @@
+prefix=/home/herolab/catkin_ws/devel
+
+Name: filters
+Description: Description of filters
+Version: 1.9.1
+Cflags: -I/home/herolab/catkin_ws/src/filters-noetic-devel/include -I/usr/include
+Libs: -L${prefix}/lib -lmean -lparams -lincrement -lmedian -ltransfer_function
+Requires: roslib roscpp rosconsole pluginlib

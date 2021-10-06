@@ -1,0 +1,8 @@
+prefix=/home/herolab/catkin_ws/devel
+
+Name: bthere_map_to_jpeg
+Description: Description of bthere_map_to_jpeg
+Version: 0.0.1
+Cflags: -I/home/herolab/catkin_ws/src/bthere_ros_nodes/src/bthere_map_to_jpeg/include
+Libs: -L${prefix}/lib -lbthere_map_to_jpeg
+Requires: 
