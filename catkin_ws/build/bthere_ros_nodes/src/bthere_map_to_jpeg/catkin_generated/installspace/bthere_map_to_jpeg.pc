@@ -1,8 +1,0 @@
-prefix=/home/herolab/catkin_ws/install
-
-Name: bthere_map_to_jpeg
-Description: Description of bthere_map_to_jpeg
-Version: 0.0.1
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -lbthere_map_to_jpeg
-Requires: 

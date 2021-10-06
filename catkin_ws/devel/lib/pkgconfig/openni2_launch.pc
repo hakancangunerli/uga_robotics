@@ -1,8 +1,0 @@
-prefix=/home/herolab/catkin_ws/devel
-
-Name: openni2_launch
-Description: Description of openni2_launch
-Version: 1.5.1
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

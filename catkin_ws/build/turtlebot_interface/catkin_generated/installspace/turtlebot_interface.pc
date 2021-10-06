@@ -1,8 +1,0 @@
-prefix=/home/herolab/catkin_ws/install
-
-Name: turtlebot_interface
-Description: Description of turtlebot_interface
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

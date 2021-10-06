@@ -1,8 +1,0 @@
-prefix=/home/herolab/catkin_ws/install
-
-Name: filters
-Description: Description of filters
-Version: 1.9.1
-Cflags: -I${prefix}/include -I/usr/include
-Libs: -L${prefix}/lib -lmean -lparams -lincrement -lmedian -ltransfer_function
-Requires: roslib roscpp rosconsole pluginlib

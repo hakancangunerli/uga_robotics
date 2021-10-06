@@ -1,1 +1,0 @@
-/usr/bin/c++  -std=c++11   -rdynamic CMakeFiles/grid_map_loader-test.dir/test/test_grid_map_loader.cpp.o  -o /home/herolab/catkin_ws/devel/lib/grid_map_loader/grid_map_loader-test  -L/home/herolab/catkin_ws/build/gtest -Wl,-rpath,/home/herolab/catkin_ws/build/gtest:/home/herolab/catkin_ws/build/gtest/googlemock/gtest ../../gtest/googlemock/gtest/libgtest.so -lpthread 
